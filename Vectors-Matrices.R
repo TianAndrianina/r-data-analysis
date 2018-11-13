@@ -1,0 +1,5 @@
+row<-matrix(rep(1:100,100),nrow=100)
+column<-matrix(rep(1:100,100),nrow=100,byrow=T)
+A<-3*column^3/(1+row*column)
+sum(A)
+sum(A[row<=column])
